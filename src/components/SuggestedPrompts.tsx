@@ -29,7 +29,7 @@ const SuggestedPrompts: React.FC<SuggestedPromptsProps> = ({ onPromptSelect, dis
     },
     {
       icon: Brain,
-      title: "How does the AI understand my documents?",
+      title: "How does AI understand my documents?",
       description: "Understand our AI processing capabilities",
       prompt: "Explain how you analyze and understand document content"
     },
@@ -49,7 +49,7 @@ const SuggestedPrompts: React.FC<SuggestedPromptsProps> = ({ onPromptSelect, dis
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {prompts.map((prompt, index) => (
           <Button
             key={index}
@@ -64,7 +64,7 @@ const SuggestedPrompts: React.FC<SuggestedPromptsProps> = ({ onPromptSelect, dis
                 <prompt.icon className="h-5 w-5 text-purple-600" />
               </div>
               <div className="flex-1 min-w-0">
-                <h4 className="font-medium text-foreground mb-1">{prompt.title}</h4>
+                <h4 className="font-medium text-gray-600 mb-1">{prompt.title}</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {prompt.description}
                 </p>
