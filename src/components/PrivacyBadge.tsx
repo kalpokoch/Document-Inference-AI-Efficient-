@@ -21,7 +21,7 @@ const PrivacyBadge: React.FC<PrivacyBadgeProps> = ({ sessionActive }) => {
       {sessionActive && (
         <div className="flex items-center space-x-2 bg-warning/10 text-warning-foreground px-3 py-2 rounded-full">
           <div className="h-2 w-2 bg-warning rounded-full animate-pulse" />
-          <span className="font-medium">Ephemeral Session Active</span>
+          <span className="font-medium text-gray-400">Ephemeral Session Active</span>
         </div>
       )}
     </div>
